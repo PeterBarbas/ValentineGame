@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rescue Your Valentine!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Start screen overlay -->
+    <div id="start-overlay" class="overlay">
+      <div class="modal start-modal">
+        <div id="start-faces"></div>
+        <h1>Find Your Valentine!</h1>
+        <p>Dodge the broken hearts and find your love.</p>
+        <button id="start-btn">Play</button>
+      </div>
+    </div>
+
+    <!-- Win overlay -->
+    <div id="win-overlay" class="overlay hidden">
+      <div class="modal win-modal">
+        <h1>Will you be my Valentine?</h1>
+        <div class="win-buttons">
+          <button id="yes-btn">Yes!</button>
+          <button id="no-btn">No</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fireworks canvas (fullscreen, above everything) -->
+    <canvas id="fireworksCanvas" class="hidden"></canvas>
+    <div id="fireworks-overlay" class="hidden">
+      <div id="fireworks-message">
+        <h1>Happy Valentine's Day!</h1>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
